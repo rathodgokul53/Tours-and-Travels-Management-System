@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Mar, 2018 9:59:18 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.TravelPojo" table="TRAVELPOJO">
+        <id name="email" type="java.lang.String">
+            <column name="EMAIL" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="pass" type="java.lang.String">
+            <column name="PASS" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	
+	<bean name="/register.html" class="controller.InsertCustomer"></bean>
+	<bean name="/login.html" class="controller.CustomerValidate"></bean>
+	<bean name="/agentregister.html" class="controller.InsertAgent"></bean>
+	<bean name="/agentLog.html" class="controller.AgentValidate"></bean>
+	<bean name="/insertPack.html" class="controller.InsertPackage"></bean>
+	<bean name="/removePack.html" class="controller.InsertPackage"></bean>
+	<bean name="/showpack.html" class="controller.ShowPackage"></bean>
+	<bean name="/userbooking.html" class="controller.UserBooking"></bean>
+	<bean name="/showticket.html" class="controller.ShowTicket"></bean>
+	<bean name="/custBooking.html" class="controller.CustBooking"></bean>
+	<bean name="/forget.html" class="com.email.CustomerForget"></bean>
+	<bean name="/updatePro.html" class="controller.UpdateProfile"></bean>
+	<bean name="/cancelBooking.html" class="controller.CancelBooking"></bean>
+	<bean name="/updateAgent.html" class="controller.UpdateAgent"></bean>
+	<bean name="/updatePackage.html" class="controller.UpdatePackage"></bean>
+	<bean name="/deletePackage.html" class="controller.DeletePackage"></bean>
+	<bean name="/agentforget.html" class="com.email.AgentForget"></bean>
+	<bean name="/adminlogin.html" class="controller.AdminLogin"></bean>
+	
+	<bean id="viewResolver" name="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+</beans>

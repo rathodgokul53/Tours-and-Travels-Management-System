@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Mar, 2018 10:07:21 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.BookingPojo" table="BOOKINGPOJO">
+        <id name="bid" type="int">
+            <column name="BID" />
+            <generator class="increment" />
+        </id>
+        <property name="aemail" type="java.lang.String">
+            <column name="AEMAIL" />
+        </property>
+        <property name="fname" type="java.lang.String">
+            <column name="FNAME" />
+        </property>
+        <property name="lname" type="java.lang.String">
+            <column name="LNAME" />
+        </property>
+        <property name="uemail" type="java.lang.String">
+            <column name="UEMAIL" />
+        </property>
+        <property name="contact" type="java.lang.String">
+            <column name="CONTACT" />
+        </property>
+        <property name="tname" type="java.lang.String">
+            <column name="TNAME" />
+        </property>
+        <property name="dod" type="java.lang.String">
+            <column name="DOD" />
+        </property>
+        <property name="nop" type="java.lang.String">
+            <column name="NOP" />
+        </property>
+        <property name="bill" type="java.lang.String">
+            <column name="BILL" />
+        </property>
+    </class>
+</hibernate-mapping>

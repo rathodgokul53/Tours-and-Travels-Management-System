@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Mar, 2018 10:07:21 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.PackagePojo" table="PACKAGEPOJO">
+        <id name="pid" type="int">
+            <column name="PID" />
+            <generator class="increment" />
+        </id>
+        <property name="pname" type="java.lang.String">
+            <column name="PNAME" />
+        </property>
+        <property name="duration" type="java.lang.String">
+            <column name="DURATION" />
+        </property>
+        <property name="dod" type="java.lang.String">
+            <column name="DOD" />
+        </property>
+        <property name="amt" type="java.lang.String">
+            <column name="AMT" />
+        </property>
+        <property name="source" type="java.lang.String">
+            <column name="SOURCE" />
+        </property>
+        <property name="dest" type="java.lang.String">
+            <column name="DEST" />
+        </property>
+        <property name="img" type="java.lang.String">
+            <column name="IMG" />
+        </property>
+        <many-to-one name="email" class="pojo.TravelPojo" fetch="join">
+            <column name="EMAIL" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
